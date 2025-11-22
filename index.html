@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigations -->
+    <header>
+        <nav>
+            <button class="tab-btn" data-target="home">Home</button>
+            <button class="tab-btn" data-target="tasks">Tasks</button>
+            <button class="tab-btn" data-target="settings">Settings</button>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <main>
+        <!-- Home -->
+        <section id="home" class="page-section">
+            <h1>Welcome!</h1>
+            <p>This is your simple frontend website.</p>
+            <button id="startBtn">Get Started</button>
+        </section>
+
+        <!-- Tasks -->
+        <section id="tasks" class="page-section hidden">
+            <h2>Tasks</h2>
+
+            <div class="task-input">
+                <input id="taskText" type="text" placeholder="Enter task...">
+                <button id="addTask">Add</button>
+            </div>
+
+            <div id="taskList" class="task-list"></div>
+        </section>
+
+        <!-- Settings -->
+        <section id="settings" class="page-section hidden">
+            <h2>Settings</h2>
+
+            <label>Name</label>
+            <input id="nameInput" type="text">
+
+            <label>Email</label>
+            <input id="emailInput" type="email">
+
+            <button id="updateProfile">Update</button>
+
+            <div id="profileCard">
+                <h3>User Profile</h3>
+                <p id="profileName">Name: -</p>
+                <p id="profileEmail">Email: -</p>
+                <p id="profileCompleted">Completed Tasks: 0</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

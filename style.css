@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* FLEX to center everything vertically + horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background: #222;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav button {
+    padding: 10px 20px;
+    color: white;
+    background: #d25050;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #664c4c;
+}
+
+/* Main Page Sections */
+.page-section {
+    width: 90%;
+    max-width: 600px;
+
+    /* center each page’s content */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Task Cards */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card {
+    padding: 10px;
+    border-radius: 5px;
+
+    /* make card content flexible later */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done {
+    background: #c8f7c5; /* green */
+}
+
+.not-done {
+    background: #f7c5c5; /* red */
+}
+
+/* Profile Card */
+#profileCard {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eee;
+    border-radius: 10px;
+
+    /* flex inside profile */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
